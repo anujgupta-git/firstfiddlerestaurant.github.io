@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<!-- -----------------------------------------------------------Head start------------------------------------------------------ -->
+<head>
+    <title>
+        First Fiddle
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        .carousel-caption {
+            color: #fff;
+            position: absolute;
+            top: 32%;
+            /*left: 82px;*/
+        }
+
+        .carousel-caption b {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        .why {
+            background-image: url('images/outletbanner.png');
+            height: 400px;
+        }
+
+        .b {
+            background-image: url('images/lotd.jpeg');
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .a {
+            background-color: #0f0f10b8;
+        }
+
+        .c {
+            background-image: url('images/outletbanner.png');
+            height: 400px;
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        .m {
+            display: none;
+        }
+
+        .fm {
+            display: block;
+        }
+
+        .rm {
+            display: none;
+        }
+
+        .f {
+            display: block;
+        }
+
+        @media(max-width:700px) {
+            .mobile-view {
+                display: block;
+            }
+
+            .dl {
+                display: none;
+            }
+
+            .a {
+                background-color: #fec926;
+            }
+
+            .m {
+                display: block;
+            }
+
+            .fm {
+                display: none;
+            }
+
+            .rm {
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+<!-- ------------------------------------------------------------Head End---------------------------------------------------------->
+
+<!---------------------------------------------------------------Body Start-------------------------------------------------------->
+<body>
+
+    <!-----------------------------------------------------------navbar start----------------------------------------------------->
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top a ">
+        <a href="#" class="navbar-brand"><img src="images/ff-logo-02.png" height="50px" class="dl">
+            <img src="images/logo-for-mobile.png" class="mobile-view">
+        </a>
+        <button class=" navbar-toggler" data-toggle="collapse" data-target="#d">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="d">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-warning">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="brands.html" class="nav-link">BRANDS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ourteam.html" class="nav-link">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pressrelease.html" class="nav-link">PRESS RELEASE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactus.html" class="nav-link">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="carrers.html" class="nav-link">CAREERS</a>
+                </li>
+                <button type="button" class="btn btn-outline-warning btn-md text-white"><a href="franchise.html"
+                        class="text-white">Franchise</a></button>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar end-->
+    <!------------------------------------------------------------navbar End------------------------------------------------------>
+ 
+    <!-----------------------------------------------------------slider Start-----------------------------------------------------> 
+    <div class="carousel slide s" data-ride="carousel" id="myslide">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/lotd.jpeg" alt="First slide" width="100%" height="600px">
+                <div class="carousel-caption">
+                    <b>LORD OF THE DRINKS</b>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="images/jlwa.jpeg" alt="First slide" width="100%" height="600px">
+                <div class="carousel-caption">
+                    <b>JLWA</b>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="images/dragonflybanner.jpeg" alt="First slide" width="100%" height="600px">
+                <div class="carousel-caption ib">
+                    <b>DRAGONFLY EXPERIENCE</b>
+                </div>
+            </div>
+
+        </div>
+        <!--end  carousel-inner--->
+        <ul class="carousel-indicators">
+            <li data-target="#myslide" data-slide-to="0" class="active"></li>
+            <li data-target="#myslide" data-slide-to="1" class=""></li>
+            <li data-target="#myslide" data-slide-to="2" class=""></li>
+        </ul>
+        <a href="#myslide" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#myslide" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!--carousel end-->
+    <!------------------------------------------------------------slider end ----------------------------------------------------->
+
+    <div class="container-fluid">
+        <div class="container"><br>
+            <h1 class="text-center">WELCOME TO <span class="text-warning"><b>FIRST FIDDLE</b></span></h1>
+            <div class="row my-2">
+                <div class="col-md-7">
+                    <p class="text-justify" style="line-height: 2.5;">First Fiddle Restaurants, one of India’s most
+                        prominent F&B companies in the casual dining sector, is headed by Priyank Sukhija. From Lazeez
+                        Affair, the first brand conceived in 1999 to Lord of The Drinks, Dragonfly Experience, Diablo
+                        and Plum By Bent Chair, our latest ventures, we have brought a wave of innovation in the
+                        hospitality industry throughout. Being one of the India’s largest restaurant chain with over 30+
+                        restaurants,
+                        now we are open to franchising routes for expansion and soon hitting the international grounds
+                        too.</p><br>
+                    <button class="btn btn-warning btn-lg text-center shadow "><span class="fm">Find Out
+                            More</span><span class="rm">Read More</span></button>
+                </div>
+
+                <div class="col-md-5"><br>
+                    <img src="images/ffbanner.png" class="w-100 f h-100" height="400px">
+                </div>
+            </div>
+        </div><br><br><br>
+    </div>
+    <!--container fluid end-->
+
+    <div class="container-fluid why">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8 text-center" style="margin-top: 80px;">
+                    <h1 class="text-center text-white "><b>MEDIA MENTIONS</b></h1>
+                    <p class="text-justify text-center text-white">We are making headlines since 1999 for having
+                        upmarket conceptualized places, experimental gastronomic affairs, and exotic mixology.
+                        From the heart of the country, we are now in the hearts of people in our country!</p>
+                    <button class="btn btn-lg btn-warning shadow">KNOW MORE</button>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+        </div>
+        <!--container end-->
+    </div>
+    <!--container fluid end--><br><br>
+
+    <!--------------------------------------------------------------Brands Section Start ------------------------------------------->
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="text-center">EXPLORE <span class="text-warning"><b>OUR BRANDS</b> </span></h1><br><br>
+            <div class="row">
+                <div class="col-md-3"><br>
+                    <img src="images/daddy.jpeg" class="w-100">
+                </div>
+
+                <div class="col-md-3"><br>
+                    <img src="images/dragonfly.jpeg" class="w-100">
+                </div>
+
+                <div class="col-md-3"><br>
+                    <img src="images/flyingsaucer.jpeg" class="w-100">
+                </div>
+
+                <div class="col-md-3"><br>
+                    <img src="images/jalwa.jpeg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!--container fluid end--><br><br>
+
+    <!---------------------------------------------------------------Brands Section End------------------------------------------- -->
+
+    <div class="container-fluid c">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center" style="margin-top: 55px;">
+                    <h1 class="text-center text-white"><b>VISIT OUR OUTLETS</b></h1>
+                    <p class="text-justify text-center text-white">From Indian food to International food and
+                        scrumptious fusion eateries, we bring to you the best of both worlds with magical events
+                        happening every other night!
+                        We're here with the perfect concept resto-bars, which will lift your mundane lives. Have a
+                        glance right away!</p>
+                    <button class="btn btn-warning btn-lg ">KNOW MORE</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <!--row end-->
+        </div>
+        <!--container end-->
+    </div>
+    <!--container fluid end-->
+
+
+    <!---------------------------------------------------------Footer Start ---------------------------------------------------------->
+    <div class="container-fluid bg-dark">
+        <div class="container"><br><br>
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <img src="images/ff-logo-02.png" class="w-75">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="text-warning">CONTACT <span class="text-light"><b>US</b></span></h1>
+                    <p class=" text-white">We're a team focusing on redefining the way the hospitality industry works by
+                        bringing in concept based restaurants across india. We are truly
+                        committed to catering to the ever-changing cosmopolitan taste of the customer and revolutioning
+                        the F & B industry!</p><br>
+                    <div style="float: left;margin-right: 100px;">
+                        <p class="text-warning">Address<span class="text-white"><br>
+                                2nd Floor, 6, Chanakyapuri Shopping Complex,<br> 48
+                                , Malcha Marg, New Delhi 110021</span></p>
+                    </div>
+
+                    <div>
+                        <P class="text-warning">Franchise Enquiry
+                            <span class="text-white"><br>Mobile:<a href="" class="text-warning">+91
+                                    9313663486</a></span>
+                            <span class="text-white"><br>Email:<a href=""
+                                    class="text-warning">franchise@firstfiddle.in</a></span>
+                        </P>
+                    </div>
+
+                    <div style="float: left; margin-right: 225px;">
+                        <P class="text-warning">HR ENQIRY
+                            <span class="text-white"><br>Mobile:<a href="" class="text-warning">+91
+                                    9313663486</a></span>
+                            <span class="text-white"><br>Email:<a href=""
+                                    class="text-warning">franchise@firstfiddle.in</a></span>
+                            <br><br>
+                            <i class="fa fa-facebook text-warning " style="padding-right: 10px;"></i>
+                            <i class="fa fa-linkedin text-warning " style="padding-right: 10px; "></i>
+                            <i class="fa fa-instagram text-warning " style="padding-right: 10px;"></i>
+                            <i class="fa fa-youtube text-warning " style="padding-right: 10px;"></i>
+                        </P>
+                    </div>
+
+                    <div>
+                        <P class="text-warning">Other Enquiry
+                            <span class="text-white"><br>Email:<a href=""
+                                    class="text-warning">franchise@firstfiddle.in</a></span>
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <!--row end-->
+        </div>
+        <!--container end-->
+    </div>
+    <!--container fluid end-->
+
+    <div class="container-fluid " style="background-color: black;">
+        <div class="container"><br>
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6 text-white" style="font-size: 20px;">
+                    <p>PRIVACY POLICY | TERMS AND CONDITIONS | BLOG
+                        COPYRIGHT © 2021 FIRST FIDDLE F&B PRIVATE LIMITED</p>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+            <!--row end-->
+        </div>
+        <!--container end-->
+    </div>
+    <!--container fluid end-->
+    <!---------------------------------------------------------Footeer end------------------------------------------------------------>
+
+</body>
+<!--body end-->
+<!----------------------------------------------------------------Body End--------------------------------------------------------->
+</html>
